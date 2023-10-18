@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>WelcomeToArsenal</title>
+
+</head>
+<body>
+
+<div th:if="${param.logout}">
+    You have been logged out.
+</div>
+<div>
+    <form name='f' action="/logout" method="POST">
+    <tr>
+        <td><input name="submit" type="submit" value="Logout" /></td>
+    </tr>
+
+</div>
+
+
+
+</body>
+</html>

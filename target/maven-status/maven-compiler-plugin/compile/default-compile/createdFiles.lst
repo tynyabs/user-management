@@ -1,0 +1,14 @@
+com\example\myapp\web\UserService.class
+com\example\myapp\dto\UserDTOMapper.class
+com\example\myapp\Security\config\CustomAuthenticationFailureHandler.class
+com\example\myapp\Security\config\PasswordEncoder.class
+com\example\myapp\entity\userRole.class
+com\example\myapp\models\DatabaseConnector.class
+com\example\myapp\entity\User.class
+com\example\myapp\MyApp.class
+com\example\myapp\dto\UserCreationResponseDTO.class
+com\example\myapp\web\UserController.class
+com\example\myapp\dto\UserCreateDTO.class
+com\example\myapp\web\UserRepository.class
+com\example\myapp\dto\UserUpdateDTO.class
+com\example\myapp\dto\UserDTO.class

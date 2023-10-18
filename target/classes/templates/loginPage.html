@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>WelcomeToArsenal</title>
+
+</head>
+<body>
+<h1>Sign In</h1>
+
+<div th:if="${param.error}">
+    Invalid username or password.
+</div>
+<div th:if="${param.logout}">
+    <tr>
+    <td><input name="submit" type="submit" value="Logout" /></td>
+    </tr>
+    You have been logged out.
+</div>
+<div >
+<form name='f' action="/loginProcess" method="POST">
+    <table>
+        <tr>
+            <td>User:</td>
+            <td><input type='text' name='username' value=''></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type='password' name='password' /></td>
+        </tr>
+        <tr>
+            <td><input name="submit" type="submit" value="Login" /></td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>
